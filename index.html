@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="styles.min.css?v=1">
+    <meta name="ad.size" content="width=300,height=600"> <!-- bien penser à modifier les dimensions de la meta -->
+    <script type="text/javascript">
+        var clickTag = "http://www.google.com";
+    </script>
+</head>
+<body>
+<div id="wrapper">
+    <!-- le template de la bannière, divisé en plusieurs écrans -->
+    <div id="ecrans">
+
+        <div id="ecran6" class="ecran">
+            <img src="img/fond.png" alt="Image de fond d'écran" id="fondEcran"/>
+        </div>
+
+        <div id="ecran5" class="ecran">
+            <img src="img/bouton.png" alt="Bouton en savoir plus" id="btnEnSavoirPlus" style="opacity:0;"/>
+        </div>
+
+        <div id="ecran4" class="ecran">
+            <img src="img/logo_group.png" alt="Logo orange money et prestashop" id="logo_group" style="opacity:0;"/>
+        </div>
+
+        <div id="ecran3" class="ecran">
+            <img src="img/text.png" alt="Texte de la bannière" id="textBanniere" style="opacity:0;"/>
+        </div>
+
+        <div id="ecran2" class="ecran">
+            <img src="img/logo.png" alt="Logo de abyster consulting" id="logoAbyster" style="opacity:0;"/>
+        </div>
+        
+        <div id="ecran1" class="ecran">
+            <img src="img/default.jpg" alt="Image par défaut" id="default" width="1" height="1" />
+        </div>
+    </div>
+   
+    <!-- les images de layouts (identiques peu importe les écrans) logo, cta, ... -->
+</div>
+<a href="javascript:window.open(window.clickTag,'_blank');void(0);" id="clickTag">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=">
+</a>
+<div id="mask"></div>
+
+<script src="scripts.min.js?v=1"></script>
+
+</body>
+</html>
